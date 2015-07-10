@@ -3,12 +3,12 @@ package que
 import (
 	"bytes"
 	"fmt"
-	"log"
 	"os"
 	"runtime"
 	"strconv"
 	"sync"
 	"time"
+	log "github.com/upstartmobile/logrus"
 )
 
 // WorkFunc is a function that performs a Job. If an error is returned, the job
