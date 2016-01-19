@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jackc/pgx"
+	"github.com/upstartmobile/pgx"
 )
 
 func TestLockJob(t *testing.T) {
