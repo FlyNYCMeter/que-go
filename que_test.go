@@ -3,7 +3,7 @@ package que
 import (
 	"testing"
 
-	"github.com/jackc/pgx"
+	"github.com/upstartmobile/pgx"
 )
 
 var testConnConfig = pgx.ConnConfig{

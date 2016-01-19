@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jackc/pgx"
+	"github.com/upstartmobile/pgx"
 )
 
 // Job is a single unit of work for Que to perform.
