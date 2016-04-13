@@ -152,7 +152,7 @@ func recoverPanic(j *Job) {
 		fmt.Fprintln(buf, string(stackBuf[:n]))
 		fmt.Fprintln(buf, "[...]")
 		stacktrace := buf.String()
-		log.Printf("event=panic job_id=%d job_type=%s\n%s", j.ID, j.Type, stacktrace)
+		log.Errorf("event=panic job_id=%d job_type=%s\n%s", j.ID, j.Type, stacktrace)
 		if err := j.Error(stacktrace); err != nil {
 			log.Printf("attempting to save error on job %d: %v", j.ID, err)
 		}
